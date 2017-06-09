@@ -6,36 +6,36 @@
 
 ### 引入依赖和插件
 ```
-	<link rel="stylesheet" type="text/css" href="path-to/css/tooltip.css">
-	<script type="text/javascript" src="path-to/js/jquery.js"></script>
-	<script type="text/javascript" src="path-to/js/tooltip.js"></script>
+<link rel="stylesheet" type="text/css" href="path-to/css/tooltip.css">
+<script type="text/javascript" src="path-to/js/jquery.js"></script>
+<script type="text/javascript" src="path-to/js/tooltip.js"></script>
 ```
 
 ### 初始化
 
 html 代码如下
 ```
-	<div class="tool-tip" id="tipTwo">
-		<div class="tip-touch" id="touchTwo">
-			<div class="tooltip-button">
-				提示
-			</div>
+<div class="tool-tip" id="tipTwo">
+	<div class="tip-touch" id="touchTwo">
+		<div class="tooltip-button">
+			提示
 		</div>
 	</div>
+</div>
 ```
 将对应的DOM初始化为 tooltip 插件
 ```
-	$("#tipOne").toolTip('init', {
-		'text': 'this is test one',
-		'width': '360'
-	});
+$("#tipOne").toolTip('init', {
+	'text': 'this is test one',
+	'width': '360'
+});
 ```
 
 ### 绑定 tooltip 显示与隐藏 事件
 ```
-	$("#touchOne").click(function() {
-		$("#tipOne").toolTip('hideShow')
-	});
+$("#touchOne").click(function() {
+	$("#tipOne").toolTip('hideShow')
+});
 ```
 
 ## API
