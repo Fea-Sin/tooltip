@@ -1,0 +1,39 @@
+.container {
+	height: 70px;
+	border: 1px solid #eee;
+}
+.tool-tip {
+	position: relative;
+	display: inline-block;
+}
+.tool-tip .tip-content {
+	font-size: 16px;
+	position: absolute;
+	width: 300px;
+}
+.tool-tip .tip-content .arrow-box {
+		position: relative;
+		padding: 1em;
+		box-sizing: border-box;
+		background-color: #f7f7f7;
+		box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.4);
+		margin-top: 0.7em;
+}
+.tool-tip .tip-content .arrow-box::after {
+		content: "";
+		position: absolute;
+		width: 0;
+		height: 0;
+		margin-left: -0.3em;
+		top: 0em;
+		left: 2em;
+		box-sizing: border-box;
+		border: 0.5em solid black;
+		border-color: transparent transparent #f7f7f7 #f7f7f7;
+		transform-origin: 0 0;
+		transform: rotate(-225deg);	
+}
+.arrow-right-mode .tip-content .arrow-box::after {
+	left: auto;
+	right: -0.3em;
+}

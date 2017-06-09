@@ -1,0 +1,22 @@
+
+.button {
+	font-size: 14px;
+	display: inline-block;
+	padding: .5em 1em;
+	color: #495060;
+	border: 1px solid #dddee1;
+	border-radius: .2em;
+	cursor: pointer;
+	background-color: #f7f7f7;
+	line-height: 1.5;
+	vertical-align: middle;	
+}
+.button-small {
+	font-size: 12px;
+}
+.button-big {
+	font-size: 18px;
+}
+.button:hover {
+	background-color: #fff;
+}

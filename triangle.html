@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="./css/demo.css">
+	<link rel="stylesheet" type="text/css" href="./css/common.css">
+	<title>Triangle</title>
+	<style type="text/css">
+	.triangle {
+		position: relative;
+		margin: 3em;
+		padding: 1em;
+		box-sizing: border-box;
+		background-color: #eee;
+		box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.4);
+	}
+	.triangle::after {
+		content: "";
+		position: absolute;
+		width: 0;
+		height: 0;
+		margin-left: -0.375em;
+		bottom: -1.5em;
+		left: 50%;
+		box-sizing: border-box;
+		border: 0.75em solid black;
+		border-color: transparent transparent #eee #eee;
+		transform-origin: 0 0;
+		transform: rotate(-45deg);
+		box-shadow: -2px 2px 3px 0 rgba(0, 0, 0, 0.4);
+	}
+	.triangle-up-arrow {
+		position: relative;
+		margin: 3em;
+		padding: 1em;
+		box-sizing: border-box;
+		background-color: #eee;
+		box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.4);
+	}
+	.triangle-up-arrow::after {
+		content: "";
+		position: absolute;
+		width: 0;
+		height: 0;
+		margin-left: -0.375em;
+		top: 0em;
+		left: 5em;
+		box-sizing: border-box;
+		border: 0.75em solid black;
+		border-color: transparent transparent #eee #eee;
+		transform-origin: 0 0;
+		transform: rotate(-225deg);
+	}	
+	.arrow-right-mode::after {
+		left: auto;
+		right: 5em;
+	}
+	.line-triangle {
+		width: 200px;
+		background-color: #fff;
+		border: 1px solid #a00;
+		position: relative;
+		min-height: 200px;
+		padding: 20px;
+		text-align: center;
+		color: #fff;
+		font: bold 1.5em/180px Helvetica, sans-serif;
+		text-shadow: 0 0 1px #000;
+	}
+	.line-triangle:after,
+	.line-triangle:before {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 100%;
+		width: 0;
+		height: 0;
+		border-style: solid;
+	}
+	.line-triangle:after {
+		top: 10px;
+		border-color: transparent transparent transparent #fff;
+		border-width: 10px;
+	}
+	.line-triangle:before {
+		top: 9px;
+		border-color: transparent transparent transparent #a00;
+		border-width: 11px;
+	}
+	</style>
+</head>
+<body>
+	<div class="demo-triangle">
+		<div class="triangle">This is a CSS3 triangle with a proper box-shadow! <br>
+		this is another line
+		</div>
+	</div>
+	<div class="demo-triangle">
+		<div class="triangle-up-arrow">
+			This is up arrow triangle <br>
+			this is another line text
+		</div>
+	</div>
+	<div class="demo-triangle">
+		<div class="triangle-up-arrow arrow-right-mode">
+			This is up arrow triangle <br>
+			right mode
+		</div>
+	</div>	
+	<div class="demo-triangle">
+		<div class="line-triangle">
+      Line - Triangle
+		</div>
+	</div>
+</body>
+</html>

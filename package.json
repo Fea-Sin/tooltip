@@ -1,0 +1,15 @@
+{
+  "name": "tool-tip",
+  "version": "1.0.0",
+  "description": "```\r \t<link rel=\"stylesheet\" type=\"text/css\" href=\"path-to/css/tooltip.css\">\r \t<script type=\"text/javascript\" src=\"path-to/js/jquery.js\"></script>\r \t<script type=\"text/javascript\" src=\"path-to/js/tooltip.js\"></script>\r ```",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

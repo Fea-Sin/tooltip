@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test for the tooltip</title>
+	<link rel="stylesheet" type="text/css" href="../dist/tooltip.css">
+	<script type="text/javascript" src="../js/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/tooltip.js"></script>
+</head>
+<body>
+	<div class="test-one">
+		<div class="tool-tip" id="tipOne">
+			<div class="tip-touch" id="touchOne">
+				<div class="tooltip-button">
+					that
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="test-two" style="margin-left: 1200px; margin-top: 100px;">
+		<div class="tool-tip" id="tipTwo">
+			<div class="tip-touch" id="touchTwo">
+				<div class="tooltip-button">
+					提示
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$("#tipOne").toolTip('init', {
+			'text': 'this is test one',
+			'width': '360'
+		});
+		$("#touchOne").click(function() {
+			$("#tipOne").toolTip('hideShow')
+		});
+
+
+		$("#tipTwo").toolTip('init', {
+			'text': 'this is test two, this test will test mode set and run state and more line test and so on',
+			'width': '360'
+		});
+		$("#touchTwo").click(function() {
+			$("#tipTwo").toolTip('hideShow')
+		});		
+	</script>
+</body>
+</html>
